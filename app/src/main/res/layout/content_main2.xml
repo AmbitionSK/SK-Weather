@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CityListActivity"
+    android:background="#fff"
+    android:id="@+id/main_layout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linear">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relative">
+            <TextView
+                android:id="@+id/temp_textView"
+                android:layout_width="match_parent"
+                android:layout_height="97dp"
+                android:text="23"
+                android:textColor="#01AAED"
+                android:textSize="70dp"
+                android:textAlignment="center"
+
+                app:fontFamily="sans-serif-smallcaps"
+                tools:layout_editor_absoluteX="36dp"
+                tools:layout_editor_absoluteY="131dp" />
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/relative2"
+            >
+
+            <TextView
+                android:id="@+id/city_textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Beijing"
+                android:textColor="#01AAED"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                />
+
+            <TextView
+                android:id="@+id/textView_weather"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="0sp"
+                android:text="多云"
+                android:textAlignment="center"
+                android:textColor="#01AAED"
+
+                android:textSize="30dp"
+                app:fontFamily="sans-serif-smallcaps"
+                tools:layout_editor_absoluteX="36dp"
+                tools:layout_editor_absoluteY="131dp" />
+            <TextView
+                android:id="@+id/textView_wind"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/textView_weather"
+                android:layout_alignBottom="@id/textView_weather"
+                android:lineSpacingExtra="0sp"
+                android:text="无持续风向"
+                android:textColor="#01AAED"
+                android:gravity="bottom"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                app:fontFamily="sans-serif-smallcaps"
+                tools:layout_editor_absoluteX="36dp"
+                tools:layout_editor_absoluteY="131dp" />
+
+            <TextView
+                android:id="@+id/textView_read"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="天气较好，温度适宜，心情会不错，学习、工作效率较高。"
+                android:padding="20dp"
+                android:paddingTop="40dp"
+                android:textColor="#000"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/linear"
+        android:id="@+id/linear2">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:id="@+id/day_0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:textColor="#01AAED"
+                android:text="晴"/>
+            <TextView
+                android:id="@+id/day_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:textColor="#01AAED"
+                android:text="晴"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="bottom">
+            <TextView
+                android:id="@+id/img_0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:id="@+id/img_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp">
+            <TextView
+                android:id="@+id/temp_0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:textColor="#01AAED"
+                android:text="晴"/>
+            <TextView
+                android:id="@+id/temp_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:textColor="#01AAED"
+                android:text="晴"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/linear2">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/day_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:textColor="#01AAED"
+                android:text="晴"/>
+            <TextView
+                android:id="@+id/day_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:textColor="#01AAED"
+                android:text="晴"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="bottom">
+
+            <TextView
+                android:id="@+id/img_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:src="@mipmap/duoyun"
+                />
+            <TextView
+                android:id="@+id/img_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:src="@mipmap/duoyun"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp">
+            <TextView
+                android:id="@+id/temp_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:textColor="#01AAED"
+                android:text="晴"/>
+            <TextView
+                android:id="@+id/temp_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:textColor="#01AAED"
+                android:text="晴"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:onClick="search"
+        android:src="@drawable/ic_menu_manage"
+        app:backgroundTint="@color/design_default_color_primary" />
+
+
+</RelativeLayout>
